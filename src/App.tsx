@@ -1,24 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import imagem from '../src/imagens/icon_header.png'
+import imagem2 from '../src/imagens/neymar.png'
+import bandeira from '../src/imagens/bandeira.png'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <header>
+      <h1>Seleção <span>Brasileira</span></h1>
+      <img src={imagem} alt="imagem do escudo da seleção brasileira" />
+    </header>
+    <div className='card'>
+      <img className='bandeira' src={bandeira} alt="bandeira do brasil"/>
+      <img src={imagem2} alt="imagem do neymar" />
+      <p>NEYMAR</p>
+      <span>LEGEND</span>
+    </div>
     </div>
   );
 }
